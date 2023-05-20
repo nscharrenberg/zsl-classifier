@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "zsl"
+version = "0.1.0"
+description = "A zero-shot learning classifier prototype"
+authors = ["Noah Scharrenberg <nscharrenberg@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.9.0"
+numpy = "^1.24.3"
+emoji = "^2.2.0"
+
+[tool.poetry.scripts]
+zsl = "zsl.__main__:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
